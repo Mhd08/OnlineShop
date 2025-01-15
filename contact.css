@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ddd;
+}
+
+.container {
+    width: 80%;
+    margin: 10vh auto;
+}
+
+.contact-box {
+    background-color: #f0f0f0;
+    display: flex;
+}
+
+.contact-left {
+    flex-basis: 60%;
+    padding: 6vh 4vh;
+}
+
+.contact-right {
+    flex-basis: 40%;
+    padding: 6vh;
+    background-color: #4a8f89;
+    color: #ddd;
+}
+
+h1 {
+    margin-bottom: 3vh;
+    font-weight: lighter;
+}
+
+.container p {
+    margin-bottom: 10vh;
+}
+
+.input-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 4vh;
+}
+
+.input-row .input-group {
+    flex-basis: 45%;
+    padding-bottom: 2vh;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 1vh;
+    background-color: #f0f0f0;
+}
+
+.contact-left h3 {
+    padding-bottom: 10vh;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+    padding: 1vh;
+    box-sizing: border-box;
+}
+
+label {
+    margin-bottom: 1vh;
+    display: block;
+    color: #4a8f89;
+}
+
+button {
+    outline: none;
+    border: none;
+    background-color: #ff6f61;
+    color: #ffff;
+    padding: 2vh;
+    border-radius: 10%;
+    margin-top: 3vh;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #4a8f89; 
+}
+
+tr td:first-child {
+    padding-right: 2vh;
+}
+
+tr td {
+    padding-top: 5vh;
+}
+
+
+/* Contact page responsiveness */
+@media (max-width: 768px) {
+    .contact-box {
+        flex-direction: column;  /* Stack the contact left and right sections vertically */
+    }
+
+    .contact-left {
+        flex-basis: 70%;  /* Make the left side take 70% of the container width */
+        padding: 5vh 4vh;  /* Adjust padding as needed */
+    }
+
+    .contact-right {
+        flex-basis: 30%;  /* Make the right side take 30% of the container width */
+        padding: 5vh;
+        background-color: #4a8f89;
+        color: #ddd;
+    }
+
+    /* Ensure that labels, inputs, and button in contact-left are properly spaced and styled */
+    .input-row .input-group {
+        flex-basis: 100%;  /* Make input fields take full width */
+        padding-bottom: 2vh;
+    }
+
+    button {
+        width: 100%;  /* Ensure the button spans the full width */
+        padding: 1rem;
+    }
+
+    /* Adjust the table in the contact-right for mobile */
+    table {
+        width: 100%;
+    }
+
+    tr td {
+        padding-top: 1rem; /* Adjust padding to make it more readable */
+    }
+}

@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Shoura's Bakery - Shop</title>
+
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="shop.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+    
+    <div class="navbar">
+        <div class="left-side">
+            <a onclick="smoothScrollTo('cake-sweet')">Cakes</a>
+            <a onclick="smoothScrollTo('pastry')">Pastries</a>
+            <a onclick="smoothScrollTo('drinks')">Drinks</a>
+        </div>
+        <div class="right-side">
+            <a href="mainPage.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+        </div>
+    </div>
+
+    <div class="about-section">
+        <h1 id="head">Your Favorite Bakery, Just a Click Away</h1>
+        <p id="description">Craving something sweet or savory? We’ve got you covered! Our bakery specializes in freshly baked goods, crafted with the finest ingredients and utmost care. Whether it’s a special occasion or a simple treat, our mouthwatering offerings are always made fresh, just for you.</p>
+
+    </div>
+
+    <div class="products-sections">
+        <h1 id="head">Catagories</h1>
+        <div id="items">
+            <div id="item">
+                <div id="img-container" onclick="smoothScrollTo('cake-sweet')">
+                <img src="Resources/cake-section.jpg" alt=""></div>
+                <p>Cakes and Sweets</p>
+            </div>
+
+            <div id="item">
+                <div id="img-container" onclick="smoothScrollTo('pastry')">
+                <img src="Resources/Pastry background2.jpg" alt="">
+                </div>
+                <p>Pastry</p>
+            </div>
+
+            <div id="item">
+                <div id="img-container" onclick="smoothScrollTo('drinks')">
+                <img src="Resources/Hot chocolate.jpg" alt="">
+                </div>
+                <p>Drinks and Cocktails</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="seperator" class="first-seperator">
+        <p>We Offer Same Day Delivery Across Lebanon</br>
+        <span>Get Started</span></p>
+    </div>
+
+    <div id="main-container" class="cake-sweet">
+        <h1 id="head-main">Cakes and Sweets</h1>
+        <p id="description">Delicious, freshly baked cakes and for every celebration and sweet craving.</p>
+
+        <div class="inner-section">
+
+            <div id="upper-section">
+                <img id="left-arrow" src="Resources/arrow-icon.png" alt="left-arrow" onclick="scrollContainerLeft('cake-items')">
+                <h1 id="head">Cakes</h1>
+                <img id="right-arrow" src="Resources/arrow-icon.png" alt="right-arrow" onclick="scrollContainerRight('cake-items')">
+            </div>
+
+            <div id="cake-items" class="items">
+                <div class="item-container">
+                    <div class="img-container">
+                        <img src="Resources/Chocolate cake 1;1.jpg" alt="">
+                    </div>
+
+                    <p class="product-name">Chocolate Cake</p>
+
+                    <div class="bottom-section">
+                        <p class="product-price">5.99$</p>
+                        <button class="add-to-cart-btn"
+                        data-name="Chocolate Cake"
+                        data-price="5.99"
+                        data-img="Resources/Chocolate cake 1;1.jpg">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="item-container">
+                    <div class="img-container">
+                        <img src="Resources/lazy-cake-2.png" alt="">
+                    </div>
+
+                    <p class="product-name">Lazy Cake</p>
+
+                    <div class="bottom-section">
+                        <p class="product-price">11.99$</p>
+                        <button class="add-to-cart-btn"
+                        data-name="Lazy Cake"
+                        data-price="11.99"
+                        data-img="Resources/lazy-cake-2.png">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="item-container">
+                    <div class="img-container">
+                        <img src="Resources/Vannila Cake.jpg" alt="">
+                    </div>
+
+                    <p class="product-name">Vanilla Cake</p>
+
+                    <div class="bottom-section">
+                        <p class="product-price">4.99$</p>
+                        <button class="add-to-cart-btn"
+                        data-name="Vanilla Cake"
+                        data-price="4.99"
+                        data-img="Resources/Vannila Cake.jpg">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="item-container">
+                    <div class="img-container">
+                        <img src="Resources/Velvet Cake.jpg" alt="">
+                    </div>
+
+                    <p class="product-name">Velvet Cake</p>
+
+                    <div class="bottom-section">
+                        <p class="product-price">7.99$</p>
+                        <button class="add-to-cart-btn"
+                        data-name="Velvet Cake"
+                        data-price="7.99"
+                        data-img="Resources/Velvet Cake.jpg">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="item-container">
+                    <div class="img-container">
+                        <img src="Resources/chocolate cupcake.jpg" alt="">
+                    </div>
+
+                    <p class="product-name">Chocolate Cupcake</p>
+
+                    <div class="bottom-section">
+                        <p class="product-price">2.99$</p>
+                        <button class="add-to-cart-btn"
+                        data-name="Chocolate Cupcake"
+                        data-price="2.99"
+                        data-img="Resources/chocolate cupcake.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="inner-section">
+
+            <div id="upper-section">
+                <img id="left-arrow" src="Resources/arrow-icon.png" alt="left-arrow" onclick="scrollContainerLeft('cupcakes-item')">
+                <h1 id="head">Cupcakes</h1>
+                <img id="right-arrow" src="Resources/arrow-icon.png" alt="right-arrow" onclick="scrollContainerRight('cupcakes-item')">
+            </div>
+
+            <div id="cupcakes-item" class="items">
+
+                <div class="item-container">
+                    <div class="img-container">
+                        <img src="Resources/chocolate cupcake.jpg" alt="">
+                    </div>
+
+                    <p class="product-name">Chocolate Cupcake</p>
+
+                    <div class="bottom-section">
+                        <p class="product-price">2.99$</p>
+                        <button class="add-to-cart-btn"
+                        data-name="Chocolate Cupcake"
+                        data-price="2.99"
+                        data-img="Resources/chocolate cupcake.jpg">Add to Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="item-container">
+                    <div class="img-container">
+                        <img src="Resources/Vanilla Cupcake.webp" alt="">
+                    </div>
+
+                    <p class="product-name">Vanilla Cupcake</p>
+
+                    <div class="bottom-section">
+                        <p class="product-price">2.59$</p>
+                        <button class="add-to-cart-btn"
+                        data-name="Vanilla Cupcake"
+                        data-price="2.59"
+                        data-img="Resources/Vanilla Cupcake.webp">Add to Cart</button>
+                    </div>
+                </div>
+
+                
+                <div class="item-container">
+                    <div class="img-container">
+                        <img src="Resources/Banana cupcake.jpg" alt="">
+                    </div>
+
+                    <p class="product-name">Banana Cupcake</p>
+
+                    <div class="bottom-section">
+                        <p class="product-price">2.59$</p>
+                        <button class="add-to-cart-btn"
+                        data-name="Banana Cupcake"
+                        data-price="2.59"
+                        data-img="Resources/Banana cupcake.jpg">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="item-container">
+                    <div class="img-container">
+                        <img src="Resources/Cherry cupcake.jpg" alt="">
+                    </div>
+
+                    <p class="product-name">Cherry Cupcake</p>
+
+                    <div class="bottom-section">
+                        <p class="product-price">2.59$</p>
+                        <button class="add-to-cart-btn"
+                        data-name="Cherry Cupcake"
+                        data-price="2.59"
+                        data-img="Resources/Cherry cupcake.jpg">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="item-container">
+                    <div class="img-container">
+                        <img src="Resources/Fruit cupcake.jpg" alt="">
+                    </div>
+
+                    <p class="product-name">Fruit Cupcake</p>
+
+                    <div class="bottom-section">
+                        <p class="product-price">2.59$</p>
+                        <button class="add-to-cart-btn"
+                        data-name="Fruit Cupcake"
+                        data-price="2.59"
+                        data-img="Resources/Fruit cupcake.jpg">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="inner-section">
+
+            <div id="upper-section">
+                <img id="left-arrow" src="Resources/arrow-icon.png" alt="left-arrow" onclick="scrollContainerLeft('pies-item')">
+                <h1 id="head">Pies</h1>
+                <img id="right-arrow" src="Resources/arrow-icon.png" alt="right-arrow" onclick="scrollContainerRight('pies-item')">
+            </div>
+
+            <div id="pies-item" class="items">
+
+                <div class="item-container">
+                    <div class="img-container">
+                        <img src="Resources/Apple pie.jpg" alt="">
+                    </div>
+
+                    <p class="product-name">Apple Pie</p>
+
+                    <div class="bottom-section">
+                        <p class="product-price">12.99$</p>
+                        <button class="add-to-cart-btn"
+                        data-name="Apple Pie"
+                        data-price="12.99"
+                        data-img="Resources/Apple pie.jpg">Add to Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="item-container">
+                    <div class="img-container">
+                        <img src="Resources/Chocolate Pie.jpg" alt="">
+                    </div>
+
+                    <p class="product-name">Chocolate Pie</p>
+
+                    <div class="bottom-section">
+                        <p class="product-price">10.99$</p>
+                        <button class="add-to-cart-btn"
+                        data-name="Chocolate Pie"
+                        data-price="10.99"
+                        data-img="Resources/Chocolate Pie.jpg">Add to Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="item-container">
+                    <div class="img-container">
+                        <img src="Resources/Pumpkin pie.webp" alt="">
+                    </div>
+
+                    <p class="product-name">Pumpkin Pie</p>
+
+                    <div class="bottom-section">
+                        <p class="product-price">11.99</p>
+                        <button class="add-to-cart-btn"
+                        data-name="Pumpkin Pie"
+                        data-price="11.99"
+                        data-img="Resources/Pumpkin pie.webp">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <div id="seperator">
+        <p>Celebrate with Us: Free Customization on Birthday Cakes!</p>
+    </div>
+
+
+
+
+    <div id="main-container" class="pastry">
+        <h1 id="head-main">Pastry</h1>
+        <p id="description">Freshly baked pastries, perfect for a delightful treat any time.</p>
+
+        <div class="inner-section">
+
+            <div id="upper-section">
+                <img id="left-arrow" src="Resources/arrow-icon.png" alt="left-arrow" onclick="scrollContainerLeft('french-item')">
+                <h1 id="head">French Pastry</h1>
+                <img id="right-arrow" src="Resources/arrow-icon.png" alt="right-arrow" onclick="scrollContainerRight('french-item')">
+            </div>
+
+            <div id="french-item" class="items">
+
+                <div class="item-container">
+                    <div class="img-container">
+                        <img src="Resources/Criossant.png" alt="">
+                    </div>
+
+                    <p class="product-name">Criossant</p>
+
+                    <div class="bottom-section">
+                        <p class="product-price">5.99$</p>
+                        <button class="add-to-cart-btn"
+                        data-name="Apple Pie"
+                        data-price="5.99"
+                        data-img="Resources/Criossant.png">Add to Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="item-container">
+                    <div class="img-container">
+                        <img src="Resources/Pain au Chocolate.jpg" alt="">
+                    </div>
+
+                    <p class="product-name">Pain au Chocolate</p>
+
+                    <div class="bottom-section">
+                        <p class="product-price">5.99$</p>
+                        <button class="add-to-cart-btn"
+                        data-name="Pain au Chocolate"
+                        data-price="5.99"
+                        data-img="Resources/Pain au Chocolate.jpg">Add to Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="item-container">
+                    <div class="img-container">
+                        <img src="Resources/Beignets.jpg" alt="">
+                    </div>
+
+                    <p class="product-name">Beignets</p>
+
+                    <div class="bottom-section">
+                        <p class="product-price">5.99$</p>
+                        <button class="add-to-cart-btn"
+                        data-name="Beignets"
+                        data-price="5.99"
+                        data-img="Resources/Beignets.jpg">Add to Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="item-container">
+                    <div class="img-container">
+                        <img src="Resources/Chouquette.jpg" alt="">
+                    </div>
+
+                    <p class="product-name">Chouquette</p>
+
+                    <div class="bottom-section">
+                        <p class="product-price">5.99$</p>
+                        <button class="add-to-cart-btn"
+                        data-name="Chouquette"
+                        data-price="5.99"
+                        data-img="Resources/Chouquette.jpg">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="inner-section">
+
+            <div id="upper-section">
+                <img id="left-arrow" src="Resources/arrow-icon.png" alt="left-arrow" onclick="scrollContainerLeft('leb-item')">
+                <h1 id="head">Lebanease Sweets</h1>
+                <img id="right-arrow" src="Resources/arrow-icon.png" alt="right-arrow" onclick="scrollContainerRight('leb-item')">
+            </div>
+
+            <div id="leb-item" class="items">
+
+                <div class="item-container">
+                    <div class="img-container">
+                        <img src="Resources/Knafeh.jpg" alt="">
+                    </div>
+
+                    <p class="product-name">Knafe</p>
+
+                    <div class="bottom-section">
+                        <p class="product-price">2.99$</p>
+                        <button class="add-to-cart-btn"
+                        data-name="Knafeh"
+                        data-price="2.99"
+                        data-img="Resources/Knafeh.jpg">Add to Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="item-container">
+                    <div class="img-container">
+                        <img src="Resources/Maamoul.jpg" alt="">
+                    </div>
+
+                    <p class="product-name">Maamoul</p>
+
+                    <div class="bottom-section">
+                        <p class="product-price">1.99$</p>
+                        <button class="add-to-cart-btn"
+                        data-name="Maamoul"
+                        data-price="1.99"
+                        data-img="Resources/Maamoul.jpg">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="item-container">
+                    <div class="img-container">
+                        <img src="Resources/Halawet el-jibn.jpg" alt="">
+                    </div>
+
+                    <p class="product-name">Halawet el-jibn</p>
+
+                    <div class="bottom-section">
+                        <p class="product-price">1.99$</p>
+                        <button class="add-to-cart-btn"
+                        data-name="Halawet el-jibn"
+                        data-price="1.99"
+                        data-img="Resources/Halawet el-jibn.jpg">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="item-container">
+                    <div class="img-container">
+                        <img src="Resources/baklava.jpg" alt="">
+                    </div>
+
+                    <p class="product-name">Baklava</p>
+
+                    <div class="bottom-section">
+                        <p class="product-price">3.99$</p>
+                        <button class="add-to-cart-btn"
+                        data-name="Baklava"
+                        data-price="3.99"
+                        data-img="Resources/baklava.jpg">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div id="seperator">
+        <p>Order Now and Save 10% on Your First Purchase!</p>
+    </div>
+
+
+
+
+
+    <div id="main-container" class="drinks">
+        <h1 id="head-main">Drinks and Cocktails</h1>
+        <p id="description">Refresh yourself with our delicious selection of beverages and cocktails.</p>
+
+        <div class="inner-section" id="drink-item">
+
+            <div id="upper-section">
+                <img id="left-arrow" src="Resources/arrow-icon.png" alt="left-arrow">
+                <h1 id="head">Hot Drinks</h1>
+                <img id="right-arrow" src="Resources/arrow-icon.png" alt="right-arrow">
+            </div>
+
+            <div class="items">
+                <div class="item-container">
+                    <div class="img-container">
+                        <img src="Resources/Hot choco.webp" alt="">
+                    </div>
+                
+                    <p class="product-name">Hot Chocolate</p>
+                
+                    <div class="bottom-section">
+                        <p class="product-price">1.99$</p>
+                        <button class="add-to-cart-btn"
+                        data-name="Hot Chocolate"
+                        data-price="1.99"
+                        data-img="Resources/Hot choco.webp">Add to Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="item-container">
+                    <div class="img-container">
+                        <img src="Resources/Tea.webp" alt="">
+                    </div>
+                
+                    <p class="product-name">Tea</p>
+                
+                    <div class="bottom-section">
+                        <p class="product-price">0.99$</p>
+                        <button class="add-to-cart-btn"
+                        data-name="Tea"
+                        data-price="0.99"
+                        data-img="Resources/Tea.webp">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="item-container">
+                    <div class="img-container">
+                        <img src="Resources/Coffee.webp" alt="">
+                    </div>
+                
+                    <p class="product-name">Coffee</p>
+                
+                    <div class="bottom-section">
+                        <p class="product-price">1.49$</p>
+                        <button class="add-to-cart-btn"
+                        data-name="Coffee"
+                        data-price="1.49"
+                        data-img="Resources/Coffee.webp">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="inner-section">
+
+            <div id="upper-section">
+                <img id="left-arrow" src="Resources/arrow-icon.png" alt="left-arrow">
+                <h1 id="head">Cold Drinks</h1>
+                <img id="right-arrow" src="Resources/arrow-icon.png" alt="right-arrow">
+            </div>
+
+            <div class="items">
+
+                <div class="item-container">
+                    <div class="img-container">
+                        <img src="Resources/Cold Water.avif" alt="">
+                    </div>
+                
+                    <p class="product-name">Cold Water</p>
+                
+                    <div class="bottom-section">
+                        <p class="product-price">0.49$</p>
+                        <button class="add-to-cart-btn"
+                        data-name="Cold Water"
+                        data-price="0.49"
+                        data-img="Resources/Cold Water.avif">Add to Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="item-container">
+                    <div class="img-container">
+                        <img src="Resources/Ice TEa.jpg" alt="">
+                    </div>
+                
+                    <p class="product-name">Ice Tea</p>
+                
+                    <div class="bottom-section">
+                        <p class="product-price">1.12$</p>
+                        <button class="add-to-cart-btn"
+                        data-name="Ice Tea"
+                        data-price="1.12"
+                        data-img="Resources/Ice TEa.jpg">Add to Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="item-container">
+                    <div class="img-container">
+                        <img src="Resources/soda.jpg" alt="">
+                    </div>
+                
+                    <p class="product-name">Soda</p>
+                
+                    <div class="bottom-section">
+                        <p class="product-price">0.99$</p>
+                        <button class="add-to-cart-btn"
+                        data-name="Soda"
+                        data-price="0.99"
+                        data-img="Resources/soda.jpg">Add to Cart</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <div class="footer">
+        <div class="left-side">
+            <p>Shoura's Bakery</p>
+            <p>Freshly baked goods made with love!</p>
+            <p>Located at: Beirut, Lebanon</p>
+            <p>Call us: +961 1 234 567</p>
+        </div>
+        <div class="middle">
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="shop.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="right-side">
+            <p>Follow Us:</p>
+            <a href="https://facebook.com/shourasbakery" target="_blank">Facebook</a> |
+            <a href="https://twitter.com/shourasbakery" target="_blank">Twitter</a> |
+            <a href="https://instagram.com/shourasbakery" target="_blank">Instagram</a> |
+            <a href="https://linkedin.com/company/shourasbakery" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+
+
+</body>
+
+</html>

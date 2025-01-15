@@ -1,0 +1,136 @@
+/* Resetting body padding and margin */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #ddd;
+}
+
+/* Navbar styles */
+.navbar {
+    width: 100%;
+    height: 7vh;
+    background-color: #4a8f89;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;  /* Ensure navbar is at the very top */
+    left: 0; /* Ensure navbar spans the full width */
+    z-index: 1000; /* Keep navbar above other content */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.navbar div {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar a:hover {
+    transform: scale(1.1);
+    border-bottom: 1px solid #ffffff;
+}
+
+/* Mobile responsive navbar */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack navbar items vertically */
+        height: auto;  /* Adjust height when stacked */
+        padding: 1rem 0;
+    }
+
+    .navbar div {
+        flex-direction: column; /* Align navbar links vertically */
+        gap: 1rem; /* Adjust gap between items */
+        width: 100%;
+        text-align: center; /* Center-align navbar links */
+    }
+
+    .navbar a {
+        font-size: 1.2rem; /* Make the links bigger for mobile */
+    }
+}
+
+/* Footer styles */
+.footer {
+    width: 100%;
+    background-color: #4a8f89;
+    padding: 2rem;
+    font-size: 0.8rem;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 4vh;
+}
+
+.footer .middle ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer .middle a {
+    color: #f0f0f0;
+}
+
+.footer .middle {
+    align-items: center;
+}
+
+.footer {
+    align-items: center;
+}
+
+.footer .right-side a {
+    color: #f0f0f0;
+}
+
+/* Mobile responsive footer */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .footer .left-side,
+    .footer .middle,
+    .footer .right-side {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer .middle ul {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .footer .middle a {
+        font-size: 1rem;
+    }
+
+    .footer .right-side {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .footer .right-side a {
+        font-size: 1rem;
+    }
+}
